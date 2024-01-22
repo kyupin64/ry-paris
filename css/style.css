@@ -7,14 +7,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 7%;
+    padding: 1% 5%;
     background-color: rgb(254, 165, 49);
 }
 .nav-bar img {
-    max-width: 70%;
-}
-.nav-bar p {
-    padding: 0 30px;
+    max-width: 80%;
+    margin-left: -30px;
 }
 .nav-item {
     margin: 0 20px;
@@ -23,4 +21,30 @@
 }
 .footer .nav-item {
     font-size: .9em;
+}
+#main-img {
+    position: relative;
+    margin-top: 3px;
+}
+#main-img img {
+    width: 100%;
+    min-height: 100px;
+    max-height: 600px;
+    object-fit: cover;
+    object-position: top;
+}
+#main-img h1 {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -232px;
+    background-color: rgb(255, 255, 255);
+    font-size: 1.7em;
+    padding: 10px 15px;
+}
+.section {
+    padding: 3% 5%;
+}
+.section:nth-child(even) {
+    background-color: #ccc;
 }
