@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 5%;
+    padding: .7% 7%;
     background-color: rgb(254, 165, 49);
 }
 .nav-bar img {
@@ -18,6 +18,9 @@
     margin: 0 20px;
     font-size: 1.4em;
     color: rgb(0, 0, 0);
+}
+.nav-bar:last-child {
+    padding: 3% 7%;
 }
 .footer .nav-item {
     font-size: .9em;
@@ -43,8 +46,32 @@
     padding: 10px 15px;
 }
 .section {
-    padding: 3% 5%;
+    padding: 4% 7%;
 }
 .section:nth-child(even) {
     background-color: #ccc;
+}
+.section h2 {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.section p {
+    margin: 20px 0;
+    font-size: 1.3em;
+}
+.image-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.image {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 10px;
+}
+.image img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
 }
