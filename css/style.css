@@ -7,12 +7,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: .5% 10%;
-    background-color: rgb(254, 165, 49);
+    padding: .5% 15%;
+    background-color: #ff5039;
 }
 .nav-bar img {
-    max-width: 180px;
-    margin-left: -20px;
+    max-width: 160px;
+    margin-left: -10px;
 }
 .nav-item {
     margin: 0 10px;
@@ -24,15 +24,26 @@
     text-decoration: underline;
 }
 .nav-bar:last-child {
-    padding: 3% 10%;
+    padding: 3% 15%;
 }
 .footer .nav-item {
     font-size: .8em;
     margin: 0 10px;
 }
+.side-bar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 10%;
+    height: 100%;
+    background-color: #fac564;
+    background-image: url(../images/food.webp);
+}
+.side-bar:nth-child(2) {
+    right: 0;
+}
 #main-img {
     position: relative;
-    margin-top: 3px;
 }
 #main-img img {
     width: 80%;
@@ -45,27 +56,23 @@
 }
 #main-img h2 {
     position: absolute;
-    bottom: 50px;
-    left: 50%;
-    margin-left: -249px;
+    bottom: 10%;
     background-color: rgb(255, 255, 255);
-    padding: 5px 30px;
+    padding: 5px 5%;
+    width: 40%;
+    margin: 0 25%;
+    text-align: center;
 }
 .section {
-    padding: 4% 10%;
+    padding: 4% 15%;
     margin: 20px 0;
 }
 .section:nth-child(2n) {
     background-color: #d9dee6;
     padding-bottom: 7%;
 }
-.section h2 {
-    font-size: 1.6em;
-    font-weight: bold;
-}
 .section p {
     margin-top: 20px;
-    font-size: 1.3em;
 }
 .image-container {
     display: flex;
@@ -77,14 +84,14 @@
     position: relative;
 }
 .image img {
-    width: 320px;
-    height: 240px;
+    width: 300px;
+    height: 225px;
     object-fit: cover;
     margin-top: 40px;
 }
 .image a {
     position: absolute;
-    width: 320px;
+    width: 300px;
     text-align: center;
     bottom: -30px;
     left: 0;
@@ -98,15 +105,15 @@
     text-decoration: underline;
 }
 .section:nth-child(even) img {
-    width: 280px;
-    height: 210px;
+    width: 263px;
+    height: 197px;
 }
 .section:nth-child(even) a {
-    width: 280px;
+    width: 263px;
 }
 #recipe-time {
     background-color: #d9dee6;
-    padding: 2% 0 2% 10%;
+    padding: 2% 0 2% 15%;
 }
 .time-info {
     display: flex;
@@ -121,9 +128,6 @@
     display: inline;
 }
 #recipe-heading {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
     text-align: center;
 }
 .ratings, .save {
@@ -135,7 +139,7 @@
     margin: 10px;
 }
 .save {
-    margin-top: 5%;
+    margin-top: 2%;
 }
 .checked {
     color: rgb(186, 48, 30);
@@ -161,7 +165,7 @@
 }
 .recipe-quote {
     background-color: #efeff4;
-    margin: 2% 10% 0;
+    margin: 2% 18% 0;
     padding: 2% 10%;
 }
 #recipe-container {
@@ -169,7 +173,7 @@
     flex-flow: row wrap;
     text-align: left;
     justify-content: space-evenly;
-    margin: 5%;
+    margin: 5% 12%;
     row-gap: 20px;
 }
 .ingredients {
@@ -196,20 +200,21 @@ h1, h2, h3, h4 {
     font-family: "Poppins", sans-serif;
 }
 h1 {
-    font-size: 2.8em;
-    margin-top: 20%;
+    font-size: 2.7em;
+    margin: 5% auto 0;
+    max-width: 50%;
 }
 h2 {
-    font-size: 2.1em;
+    font-size: 2em;
 }
 h3 {
-    font-size: 1.9em;
+    font-size: 1.8em;
 }
 h4 {
     font-size: 1.3em;
     color: #595b5b;
 }
-h5 {
+h5, p, li, a {
     font-size: 1em;
 }
 #recipe-container h5 {
