@@ -192,11 +192,17 @@
 .directions li:nth-of-type(7) {
     padding-top: 0;
 }
-#recipe-container li, #recipe-container h5 {
+.ingredients li {
     margin-left: 15px;
 }
-ol h5 {
-    padding-left: 8px;
+.directions li {
+    margin-left: 20px;
+}
+.ingredients h5 {
+    padding-left: 15px;
+}
+.directions h5 {
+    padding-left: 25px;
 }
 h1, h2, h3, h4 {
     font-family: "Poppins", sans-serif;
